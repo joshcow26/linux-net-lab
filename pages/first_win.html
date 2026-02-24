@@ -2,7 +2,7 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        <title>Beatrix</title>
+        <title>Success!</title>
         <style>
 body {
         background-color: black;
@@ -20,16 +20,33 @@ body {
         align-items: center;
         gap: 30px;
 }
+.pic {
+        width: 500px;
+        height: auto;
+}
+.gun-img,
+.sword-img {
+	display: none;
+}
+#gun:target ~ .gun-img {
+	display: block;
+}
+#sword:target ~ .sword-img {
+	display: block;
+}
         </style>
 </head>
 <body>
-        <h1> Choose your weapon! </h1>
+        <h1> You beat her up nicely. </h1>
+	
+	<div id="gun"></div>
+	<div id="sword"></div>
 
-        <img src="images/face.jpg">
+        <img src="sword.webp" class="pic sword-img">
+	<img src="gun.png" class="pic gun-img">
 
         <div class="links">
-            <a href="sword_enemy.html">Sword 🗡️</a>
-            <a href="../index.html">Gun 🔫</a>
+            <a href="../index.html">Onward!!</a>
         </div>
 </body>
 </html>
