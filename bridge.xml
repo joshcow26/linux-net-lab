@@ -1,0 +1,5 @@
+<network>
+	<name>labbridge</name>
+	<forward mode="bridge"/>
+	<bridge name="labbr0"/>
+</network>
